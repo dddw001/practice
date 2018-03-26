@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .lamp{width: 20px;height: 20px;border-radius: 50%;background-color: #999;display: inline-block;margin-left: 10px;}
+        .lamp1{animation: redLamp 10s ease infinite;}
+        .lamp2{animation: yellowLamp 10s ease infinite;}
+        .lamp3{animation: greenLamp 10s ease infinite;}        
+        @keyframes redLamp{
+            0%{background-color: red;}
+            69%{background-color: red;}
+            70%{background-color:#999}
+            80%{background-color: #999}
+            81%{background-color: #999;}
+            100%{background-color: #999;}
+        }
+        @keyframes yellowLamp{
+            0%{background-color: #999;}
+            69%{background-color: #999;}
+            70%{background-color: yellow;}
+            80%{background-color: yellow;}
+            81%{background-color: #999;}
+            100%{background-color: #999;}
+        }
+        @keyframes greenLamp{
+            0%{background-color: #999;}
+            69%{background-color: #999;}
+            70%{background-color: #999;}
+            80%{background-color: #999;}
+            81%{background-color: green;}
+            100%{background-color: green;}
+        }
+    </style>
+</head>
+<body>
+    <div class="lamp lamp1"></div>
+    <div class="lamp lamp2"></div>
+    <div class="lamp lamp3"></div>    
+</body>
+</html>
